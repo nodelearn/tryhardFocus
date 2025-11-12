@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        html, body {
+            background-color: white !important;
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preload" href="style.css" as="style">
+    <title>Registros</title>
+</head>
+<body style="background-color: white;">
+    <a href="index.html">
+        <button class="buttom-back">Voltar</button>    
+    </a>
+    
+    <div class="records-container" id="records-container">
+    </div>
+
+    <script>
+        function loadRecords() {
+            const records = JSON.parse(localStorage.getItem('focusRecords') || '[]');
+            const container = document.getElementById('records-container');
+            
+            if (records.length === 0) {
+                container.innerHTML = '<div class="no-records">Nenhum registro de foco ainda. Comece a focar!</div>';
+                return;
+            }
+            
+            container.innerHTML = records.map(record => `
+                <div class="record-item">
+                    <div class="record-date">${record.date}</div>
+                    <div class="record-duration">${record.duration}</div>
+                </div>
+            `).join('');
+        }
+        
+        loadRecords();
+    </script>
+</body>
+</html>
