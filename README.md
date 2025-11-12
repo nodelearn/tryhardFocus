@@ -7,4 +7,4 @@ Estou aprendendo, e essa foi uma experiência muito prazerosa. Tenho certeza de 
 
 Obrigado por ler!
 
-<a href="https://ibb.co/F4MrjfjK"><img src="https://i.ibb.co/F4MrjfjK/print1.png" alt="print1" border="0"></a>
+![Preview do site](https://i.ibb.co/tptGWNW4/print1.png)
