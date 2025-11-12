@@ -10,6 +10,3 @@ Obrigado por ler!
 ![Preview do site](https://i.ibb.co/tptGWNW4/print1.png)
 
 ![Preview 2 do site](https://i.ibb.co/sdbrBSbv/print2.png)
-
-Teste você mesmo e tenha humildade 😂
-https://tryhard-focus.vercel.app/
